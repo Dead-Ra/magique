@@ -19,7 +19,7 @@ def generate_names():
   canonical_card_names = []
   non_canonical_card_names = {}
 
-  with open(filepath, 'r') as f:
+  with open(filepath, 'r', encoding='utf-8') as f:
     catalog = json.load(f)
 
   # now, let's create a list of all the normalized names.
